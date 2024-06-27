@@ -23,9 +23,9 @@ class SignUpScreen extends StatelessWidget {
               child: Column(
                 children: [
                   const SizedBox(height: 16),
-                  const Text("Register Account", style: headingStyle),
+                  const Text("Registrasi Akun", style: headingStyle),
                   const Text(
-                    "Complete your details or continue \nwith social media",
+                    "Masukkan detail kamu \natau lanjutkan dengan akun lainnya",
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 16),
@@ -50,7 +50,7 @@ class SignUpScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    'By continuing your confirm that you agree \nwith our Term and Condition',
+                    'Dengan melanjutkan ini berarti kamu setuju \ndengan Syarat dan Ketentuan kami',
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.bodySmall,
                   )

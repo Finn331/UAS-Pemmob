@@ -24,7 +24,7 @@ class SignInScreen extends StatelessWidget {
                 children: [
                   const SizedBox(height: 16),
                   const Text(
-                    "Welcome Back",
+                    "Selamat Datang di TOCIL",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 24,
@@ -32,7 +32,7 @@ class SignInScreen extends StatelessWidget {
                     ),
                   ),
                   const Text(
-                    "Sign in with your email and password  \nor continue with social media",
+                    "Sign in dengan email and password kamu \natau lanjutkan dengan akun kamu lainnya",
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 16),

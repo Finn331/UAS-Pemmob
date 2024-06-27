@@ -22,16 +22,16 @@ class CompleteProfileScreen extends StatelessWidget {
               child: Column(
                 children: [
                   const SizedBox(height: 16),
-                  const Text("Complete Profile", style: headingStyle),
+                  const Text("Lengkapi Profilemu", style: headingStyle),
                   const Text(
-                    "Complete your details or continue  \nwith social media",
+                    "Lengkapi profil kamu  \n dengan benar",
                     textAlign: TextAlign.center,
                   ),
                   const SizedBox(height: 16),
                   const CompleteProfileForm(),
                   const SizedBox(height: 30),
                   Text(
-                    "By continuing your confirm that you agree \nwith our Term and Condition",
+                    "Dengan melanjutkan ini berarti kamu setuju \ndengan Syarat dan Ketentuan kami",
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.bodySmall,
                   ),

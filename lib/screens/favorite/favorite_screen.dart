@@ -13,7 +13,7 @@ class FavoriteScreen extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            "Favorites",
+            "Favorit Anda",
             style: Theme.of(context).textTheme.titleLarge,
           ),
           Expanded(

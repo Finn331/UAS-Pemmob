@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
-
 import 'components/otp_form.dart';
 
 class OtpScreen extends StatelessWidget {
   static String routeName = "/otp";
 
   const OtpScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("OTP Verification"),
+        title: const Text("Verifikasi OTP"),
       ),
       body: SizedBox(
         width: double.infinity,
@@ -23,20 +22,20 @@ class OtpScreen extends StatelessWidget {
               children: [
                 const SizedBox(height: 16),
                 const Text(
-                  "OTP Verification",
-                  style: headingStyle,
+                  "Verifikasi OTP",
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 ),
-                const Text("We sent your code to +1 898 860 ***"),
+                const Text("Kami mengirimkan kode ke +628123456***"),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text("This code will expired in "),
+                    const Text("kode akan expired dalam "),
                     TweenAnimationBuilder(
                       tween: Tween(begin: 30.0, end: 0.0),
                       duration: const Duration(seconds: 30),
                       builder: (_, dynamic value, child) => Text(
                         "00:${value.toInt()}",
-                        style: const TextStyle(color: kPrimaryColor),
+                        style: const TextStyle(color: Colors.blue),
                       ),
                     ),
                   ],
@@ -45,13 +44,13 @@ class OtpScreen extends StatelessWidget {
                 const SizedBox(height: 20),
                 GestureDetector(
                   onTap: () {
-                    // OTP code resend
+                    // Logika untuk mengirim ulang OTP
                   },
                   child: const Text(
-                    "Resend OTP Code",
+                    "Kirim ulang kode OTP",
                     style: TextStyle(decoration: TextDecoration.underline),
                   ),
-                )
+                ),
               ],
             ),
           ),

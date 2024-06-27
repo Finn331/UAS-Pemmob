@@ -66,7 +66,7 @@ class _SignFormState extends State<SignForm> {
             },
             decoration: const InputDecoration(
               labelText: "Email",
-              hintText: "Enter your email",
+              hintText: "Masukkin email kamu",
               // If  you are using latest version of flutter then lable text and hint text shown like this
               // if you r using flutter less then 1.20.* then maybe this is not working properly
               floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -97,7 +97,7 @@ class _SignFormState extends State<SignForm> {
             },
             decoration: const InputDecoration(
               labelText: "Password",
-              hintText: "Enter your password",
+              hintText: "Masukkin kata sandi kamu ",
               // If  you are using latest version of flutter then lable text and hint text shown like this
               // if you r using flutter less then 1.20.* then maybe this is not working properly
               floatingLabelBehavior: FloatingLabelBehavior.always,
@@ -116,13 +116,13 @@ class _SignFormState extends State<SignForm> {
                   });
                 },
               ),
-              const Text("Remember me"),
+              const Text("Ingat Saya"),
               const Spacer(),
               GestureDetector(
                 onTap: () => Navigator.pushNamed(
                     context, ForgotPasswordScreen.routeName),
                 child: const Text(
-                  "Forgot Password",
+                  "Lupa Password",
                   style: TextStyle(decoration: TextDecoration.underline),
                 ),
               )
@@ -139,7 +139,7 @@ class _SignFormState extends State<SignForm> {
                 Navigator.pushNamed(context, LoginSuccessScreen.routeName);
               }
             },
-            child: const Text("Continue"),
+            child: const Text("Lanjutkan"),
           ),
         ],
       ),

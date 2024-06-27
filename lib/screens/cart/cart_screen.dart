@@ -22,11 +22,11 @@ class _CartScreenState extends State<CartScreen> {
         title: Column(
           children: [
             const Text(
-              "Your Cart",
+              "Keranjang Anda",
               style: TextStyle(color: Colors.black),
             ),
             Text(
-              "${demoCarts.length} items",
+              "${demoCarts.length} item",
               style: Theme.of(context).textTheme.bodySmall,
             ),
           ],

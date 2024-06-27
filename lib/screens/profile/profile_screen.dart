@@ -11,7 +11,7 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Profile"),
+        title: const Text("Profile Anda"),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(vertical: 20),
@@ -20,27 +20,27 @@ class ProfileScreen extends StatelessWidget {
             const ProfilePic(),
             const SizedBox(height: 20),
             ProfileMenu(
-              text: "My Account",
+              text: "Akun Saya",
               icon: "assets/icons/User Icon.svg",
               press: () => {},
             ),
             ProfileMenu(
-              text: "Notifications",
+              text: "Notifikasi",
               icon: "assets/icons/Bell.svg",
               press: () {},
             ),
             ProfileMenu(
-              text: "Settings",
+              text: "Pengaturan",
               icon: "assets/icons/Settings.svg",
               press: () {},
             ),
             ProfileMenu(
-              text: "Help Center",
+              text: "Pusat Bantuan",
               icon: "assets/icons/Question mark.svg",
               press: () {},
             ),
             ProfileMenu(
-              text: "Log Out",
+              text: "Keluar",
               icon: "assets/icons/Log out.svg",
               press: () {},
             ),
